@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/fav-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Proveedor</title>
+</head>
+<body>
+    <a href="Ingresar.html">Volver</a>
+    <h1 class="titulo">
+        Ingreso
+    </h1>
+    <br>
+    <form action="link" method="POST" target="_blank" autocomplete="on">
+    <!-- <fieldset>
+        <legend>Usuario Registrado</legend> -->
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha">
+        <label for="horario">Hora</label>
+        <input type="time" id="hora">
+        <br><br>
+        <label for="empresa">Empresa para la que trabaja</label>
+        <input type="text" id="empresa" required>
+        <br>
+        <label for="nombre y apellido">Nombre y Apellido</label>
+        <input type="text" id="nombre" required>
+        <label for="temperatura"> Temperatura</label>
+        <input type="number" id="temperatura" required>
+        <br>
+        <p>Es contacto estrecho de un paciente COVID positivo?</p>
+        <input type="radio" name="option" value="si">Si
+        <input type="radio" name="option" value="no">No
+        <br>
+        <p>Tiene algún síntoma  compatible con los de COVID-19?</p>
+        <input type="radio" name="opcion" value="si">Si
+        <input type="radio" name="opcion" value="no">No
+        <br>
+        <p>Firma</p>
+        <label for="firma"></label> 
+        <textarea name="firma" id="" cols="30" rows="10" placeholder="Dibuje su firma"></textarea>
+        <br>
+        <button>Enviar</button>
+        <button type="reset">Limpiar datos</button>
+    <!-- </fieldset> -->
+    </form>
+</body>
+<footer>
+    <div>
+        Autoneum Argentina SA - BGSAMEA @2021
+    </div>
+</footer>
+    
+</body>
+</html>

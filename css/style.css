@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "neum";
+  src: url("../fonts/AutoneumUnitOTLight.woff");
+}
+h1.titulo{
+  left: 10px;
+  padding: 10px;
+  background: #BAC60B;
+  width: 97%;
+  color: #fff;
+  text-align: center;
+  font-family: neum; 
+  margin-inline: -0.2em;
+  }
+footer{
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+}
+footer div {
+  background: #BAC60B;
+  text-align: center;
+  color: #fff;
+  font-family: neum;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  }
+.centrar {
+  width: 96%;
+  left: 11px;
+  padding: 10px;
+  text-align: center;
+  font-family: neum;
+  }
+nav > a{
+  color: #fff;
+  font-family: neum;
+  background: #BAC60B;
+  padding: 10px;
+  text-decoration: none !important;
+  border: 0px;
+  }
+.contenedor  a.btnIngreso{
+    grid-row-start: 3;
+    grid-column-start: 1;
+}
+a.btnIngreso {
+  color: #fff;
+  font-family: neum;
+  background: #BAC60B;
+  padding: 10px;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  font-size: large;
+  }
+nav > a:hover{
+  color: #515703;
+  }
+.covid{
+  display: flex;
+  justify-content: center;
+  margin-left: 1em;
+ }
+.btn.default{
+  background: #BAC60B !important;
+ }
+/* .contenedor  a.btnIngreso{
+   grid-row-start: 3;
+   grid-column-start: 1;
+ } */
+.dropbtn{
+   background-color: #fff;
+   color:#000000;
+   padding: 10px;
+   font-family: neum;
+ }
+.dropdown{
+   position: relative;
+   display: inline-block;
+ }
+.dropdown-content{
+   display: none;
+   position: absolute;
+   background-color: #fff;
+   box-shadow: #BAC60B;
+   z-index: 1;
+ }
+.dropdown-content a{
+   color: #000000;
+   padding: 6px 8px;
+   display: block;
+ }
+ ul a, .dropbtn{
+  display: inline-block;
+ }
+.dropdown-content a:hover {
+  background-color: #9b9797;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+ul .dropdown{
+  display: inline-block;
+}
+ /*Diseño Responsivo Desktop*/
+.contenedor{
+  width: 90%;
+  min-width: 768px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
+}
+.contenedor header{
+  grid-column-start: 1;
+  grid-column-end: 5;
+  left: 11px;
+  padding: 10px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-family: neum;
+}
+.contenedor .contenido{
+  grid-column: span 2;
+}
+.contenedor .imagen{
+  grid-column-start: 3;
+  grid-column-end: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor .pie{
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.contenedor .inicio{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.contenedor .covid{
+grid-column-start: 2;
+grid-column-end: 4;
+display: flex;
+align-items: center;
+}
+@media  screen and (max-width: 768px ) {
+  .contenedor .contenido{
+    grid-column: 1 / -1;
+  }
+}
