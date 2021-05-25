@@ -1,0 +1,227 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+}
+@font-face {
+  font-family: "neum";
+  src: url("../fonts/AutoneumUnitOTLight.woff");
+}
+h1.titulo{
+  padding: 10px;
+  background: #BAC60B;
+  color: #fff;
+  text-align: center;
+  font-family: neum;
+  }
+
+footer div {
+  background: #BAC60B;
+  text-align: center;
+  color: #fff;
+  font-family: neum;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+.centrar {
+  width: 96%;
+  left: 11px;
+  padding: 10px;
+  text-align: center;
+  font-family: neum;
+  }
+nav > a{
+  color: #fff;
+  font-family: neum;
+  background: #BAC60B;
+  padding: 10px;
+  text-decoration: none !important;
+  border: 0px;
+  }
+.menu{
+  text-align: right;
+}
+.menu li{
+  display:inline-block;
+  color: #777777;
+  font-family: neum;
+  text-decoration: none;
+
+}
+.menu a{
+  text-decoration: none;
+  text-align: right;
+}
+a.btnIngreso {
+  color: #fff;
+  font-family: neum;
+  background: #BAC60B;
+  padding: 10px;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  font-size: large;
+  animation-name: cambiartamanio;
+  animation-duration: 1s;
+  }
+a.btnurl {
+  color: #fff;
+  font-family: neum;
+  background: #BAC60B;
+  text-decoration: none !important;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  font-size: medium;
+  }
+nav > a:hover{
+  color: #515703;
+  }
+@keyframes cambiartamanio {
+  from {font-size: small;}
+  to {font-size: large;}
+}  
+.covid{
+  display: flex;
+  justify-content: center;
+  margin-left: 1em;
+ }
+.btn.default{
+  background: #BAC60B !important;
+ }
+body > a.volver{
+  display: inline-block;
+  margin: left;
+  font-family: neum;
+  color: #777777;
+  text-decoration: none;
+ }
+li > a{
+   color: #777777;
+ }
+li > a:hover{
+   color: #BAC50d;
+ }
+body > a:hover{
+   color: #BAC50d;
+ }
+p , label, legend, input, button, fieldset, textarea{
+   font-family: neum;
+   font-size: medium;
+ }
+.fas{
+  font-size: 40px;
+  color: #BAC50d;
+  /* display: flex;
+  justify-content: space-around;
+  align-items: self-end; */
+}
+ /*Diseño Responsivo Desktop*/
+.contenedor{
+  min-height: 100%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "header header header header header"
+  "contenido contenido contenido imagen imagen"
+  ". . bton . ."
+  ". opcion opcion opcion ."
+  "pie pie pie pie pie";
+}
+.contenedor header{
+  grid-area: header;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-family: neum;
+}
+.contenedor .contenido{
+  grid-area: contenido;
+}
+.contenedor .imagen{
+  grid-area: imagen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor .pie{
+  grid-area: pie;
+  align-self: end;
+}
+.contenedor .covid{
+grid-column-start: 2;
+grid-column-end: 5;
+display: flex;
+align-items: center;
+}
+.contenedor .bton{
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+.contenedor .centrar{
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+.contenedor .opcion{
+  grid-area: opcion;
+  display: flex;
+  justify-content: space-around;
+  align-items: self-end;
+}
+.ubicacion{
+  width: 600px;
+  height: 400px;
+}
+@media  screen and (max-width: 768px ) {
+  .contenedor{
+    grid-template-areas: "header header header header header"
+    "contenido contenido contenido contenido contenido"
+    ". . bton . ."
+    ". opcion opcion opcion opcion."
+    "pie pie pie pie pie";}
+}
+@media screen and ( max-width: 600px ) {
+  .contenedor .opcion{
+    display: flex;
+    justify-content: end;
+
+  }
+  /* .contenedor{
+    grid-template-areas: "header header header header header"
+    "contenido contenido contenido contenido contenido"
+    ". . bton . ."
+    ". opcion opcion . ."
+    "pie pie pie pie pie";} */
+}
+@media only screen and ( max-width: 360px ) {
+  .contenedor{
+    grid-template-areas: "header"
+    "contenido"
+    "bton"
+    "imagen"
+    "opcion"
+    "pie";}
+    .contenedor .centrar{
+      grid-column-start: 1;
+      grid-column-end: 1;
+    }
+    .contenedor .covid{
+      grid-column-start: 1;
+      grid-column-end: 1;
+    }
+    .contenedor .bton{
+      grid-column-start: 1;
+      grid-column-end: 1;
+    }
+}
